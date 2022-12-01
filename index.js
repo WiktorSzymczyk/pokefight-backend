@@ -5,8 +5,8 @@ const cors = require("cors");
 
 const pokemonRouter = require("./routes/pokemonRouter");
 
-app.use("/pokemon", pokemonRouter);
 app.use(cors());
+app.use("/pokemon", pokemonRouter);
 
 app.listen(port, () => {
   console.log(`Connected to port ${port}`);
